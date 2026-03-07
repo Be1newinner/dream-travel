@@ -3,6 +3,9 @@
 import Image from "next/image"
 import Link from "next/link"
 import { MapPin, Clock, Users, Star } from "lucide-react"
+import { CirclePlus } from "lucide-react"
+import { CircleAlert } from "lucide-react"
+import { MoveHorizontal } from "lucide-react"
 
 const packages = [
   {
@@ -10,6 +13,7 @@ const packages = [
     title: "Mystic Mountains Retreat",
     image: "/city-tour-6-650x400.webp",
     location: "Dubai, UAE",
+    time: "03",
     people: "2-10 Person",
     price: "$350",
     rating: 4.8
@@ -19,6 +23,7 @@ const packages = [
     title: "Historic Landmarks Journey",
     image: "/city-tour-5-650x400.webp",
     location: "Phuket, Thailand",
+    time: "04",
     people: "2-8 Person",
     price: "$420",
     rating: 4.7
@@ -28,6 +33,7 @@ const packages = [
     title: "Old Town Discovery Walk",
     image: "/tour-10-650x400.webp",
     location: "Maldives",
+    time: "02",
     people: "Couple",
     price: "$690",
     rating: 4.9
@@ -37,6 +43,7 @@ const packages = [
     title: "Art, Music & Heritage Tour",
     image: "/tour-9-650x400.webp",
     location: "Istanbul, Turkey",
+    time: "03",
     people: "2-12 Person",
     price: "$540",
     rating: 4.6
@@ -46,6 +53,7 @@ const packages = [
     title: "Culture & Cuisine Discovery",
     image: "/tour-10-650x400.webp",
     location: "Maldives",
+    time: "04",
     people: "Couple",
     price: "$690",
     rating: 4.9
@@ -55,6 +63,7 @@ const packages = [
     title: "Eco-Friendly City Ride",
     image: "/tour-9-650x400.webp",
     location: "Istanbul, Turkey",
+    time: "05",
     people: "2-12 Person",
     price: "$540",
     rating: 4.6
@@ -122,6 +131,13 @@ export default function PopularPackages() {
               <div className="flex items-center gap-2 text-gray-500 font-medium text-sm mb-4">
                 <MapPin size={16} />
                 {item.location}
+                <div className="flex items-center gap-3">
+                  <MoveHorizontal />
+                  <div className="flex items-center">
+                    {item.time}
+                    <p>/Hours</p>
+                  </div>
+                </div>
               </div>
 
               {/* Button */}
@@ -138,8 +154,15 @@ export default function PopularPackages() {
                 </div>
               </div>
               <div className="grid grid-cols-2 font-medium mt-4">
-                <p>Experience</p>
-                <p>Inclusion</p>
+                <div className="flex items-center gap-1">
+                  <p>Experience</p>
+                  <CircleAlert size={14} color="gray" />
+                </div>
+                <div className="flex items-center gap-1 ">
+                  <CirclePlus size={14} color="gray" />
+                  <p>Inclusion</p>
+                  <CircleAlert size={14} color="gray" />
+                </div>
               </div>
             </div>
           </div>
