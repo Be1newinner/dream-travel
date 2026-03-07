@@ -101,7 +101,7 @@ export default function TopDestination() {
         {sliderData.map((item, index) => (
           <CarouselItem key={index} className="basis-1/2 pl-1 lg:basis-1/4 ">
             <div className="p-1">
-              <div className="my-10">
+              <div className="mt-10">
                 <div className="">
                 <Image src={item.image} alt="Image" height={200} width={200} className="w-[280px] h-[280px] mx-auto object-cover rounded-full shrink-0" />
                 <h2 className="text-xl font-bold py-2">{item.name}</h2>
