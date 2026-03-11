@@ -1,10 +1,4 @@
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious,} from "@/components/ui/carousel"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -49,7 +43,6 @@ export default function TourGuided() {
         <section className="py-20 bg-[url('/home3-tour-guide-bg.png')] bg-[#FFF2E2]">
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <h2 className="text-4xl font-bold mb-3">Tour Guided</h2>
-
                 <p className="text-gray-500 text-lg mx-auto font-medium max-w-xl">
                     A curated list of the most popular travel packages based on different destinations.
                 </p>
@@ -67,12 +60,8 @@ export default function TourGuided() {
                                         src={item.image}
                                         alt={item.name}
                                         fill
-                                        className="rounded-full object-cover transition duration-500 group-hover:scale-105"
-                                    />
-                                    <div className="absolute bottom-10 left-0 right-0 flex justify-center gap-3
-                  opacity-0 translate-y-6 group-hover:translate-y-0 group-hover:opacity-100
-                  transition-all duration-500">
-
+                                        className="rounded-full object-cover transition duration-500 group-hover:scale-105"/>
+                                    <div className="absolute bottom-10 left-0 right-0 flex justify-center gap-3 opacity-0 translate-y-6 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                                         <Link href="#" className="bg-white p-2 rounded-full hover:bg-blue-600 hover:text-white transition">
                                             <Instagram size={18} />
                                         </Link>
@@ -84,7 +73,6 @@ export default function TourGuided() {
                                         <Link href="#" className="bg-white p-2 rounded-full hover:bg-blue-600 hover:text-white transition">
                                             <Twitter size={18} />
                                         </Link>
-
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold mt-6">
@@ -93,7 +81,6 @@ export default function TourGuided() {
                                 <p className="text-gray-500 font-medium">
                                     {item.role}
                                 </p>
-
                             </div>
                         </CarouselItem>
                     ))}
@@ -101,12 +88,12 @@ export default function TourGuided() {
                 <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
-                <div className="flex mt-8 justify-center gap-4"><p className="bg-white rounded-full px-4 py-1 font-medium text-lg gap-4 ">Need to Help? Don’t Hesitate Friendly Collaboarte with Experties</p>
-                    <Link href="#" className="flex items-center bg-white rounded-full text-lg gap-1 px-4 py-1 font-medium group hover:text-blue-700">
-                        Meet Our Team
-                        <ArrowUpRight className="transition duration-500 group-hover:rotate-45" />
-                    </Link>
-                </div>
+            <div className="flex mt-8 justify-center gap-4"><p className="bg-white rounded-full px-8 py-1 font-medium text-lg gap-4 ">Need to Help? Don’t Hesitate Friendly Collaboarte with Experties</p>
+                <Link href="#" className="flex items-center bg-white rounded-full text-lg gap-1 px-8 py-1 font-medium group hover:text-blue-700">
+                    Meet Our Team
+                    <ArrowUpRight className="transition duration-500 group-hover:rotate-45" />
+                </Link>
+            </div>
         </section>
     )
 }
