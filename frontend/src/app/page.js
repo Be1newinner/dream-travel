@@ -7,6 +7,7 @@ import TopDestination from "@/components/home/TopDestination";
 import BestAgency from "@/components/home/BestAgency";
 import Counter from "@/components/home/Counter";
 import OneDayTrip from "@/components/home/OneDayTrip";
+import TourGuided from "@/components/home/TourGuided";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <BestAgency />
       <Counter />
       <OneDayTrip />
+      <TourGuided />
     </>
   );
 }

@@ -1,7 +1,6 @@
 import { Headset, User, ShieldCheck, NotebookPen } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
