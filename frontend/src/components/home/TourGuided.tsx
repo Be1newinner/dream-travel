@@ -9,6 +9,7 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import { Instagram, Facebook, Twitter } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 
 const sliderData = [
     {
@@ -100,7 +101,12 @@ export default function TourGuided() {
                 <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
-
+                <div className="flex mt-8 justify-center gap-4"><p className="bg-white rounded-full px-4 py-1 font-medium text-lg gap-4 ">Need to Help? Don’t Hesitate Friendly Collaboarte with Experties</p>
+                    <Link href="#" className="flex items-center bg-white rounded-full text-lg gap-1 px-4 py-1 font-medium group hover:text-blue-700">
+                        Meet Our Team
+                        <ArrowUpRight className="transition duration-500 group-hover:rotate-45" />
+                    </Link>
+                </div>
         </section>
     )
 }
