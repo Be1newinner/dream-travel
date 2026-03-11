@@ -38,49 +38,16 @@ const packages = [
     price: "$690",
     rating: 4.9
   },
-  {
-    id: 4,
-    title: "Art, Music & Heritage Tour",
-    image: "/tour-9-650x400.webp",
-    location: "Istanbul, Turkey",
-    time: "03",
-    people: "2-12 Person",
-    price: "$540",
-    rating: 4.6
-  },
-  {
-    id: 5,
-    title: "Culture & Cuisine Discovery",
-    image: "/tour-10-650x400.webp",
-    location: "Maldives",
-    time: "04",
-    people: "Couple",
-    price: "$690",
-    rating: 4.9
-  },
-  {
-    id: 6,
-    title: "Eco-Friendly City Ride",
-    image: "/tour-9-650x400.webp",
-    location: "Istanbul, Turkey",
-    time: "05",
-    people: "2-12 Person",
-    price: "$540",
-    rating: 4.6
-  }
 ]
 
-export default function PopularPackages() {
+export default function OneDayTrip() {
   return (
     <section className="py-20">
 
       {/* Section Header */}
       <div className="max-w-7xl mx-auto px-6 text-center mb-14">
 
-        <h2 className="text-4xl font-bold mb-3">
-          Popular Travel Package
-        </h2>
-
+        <h2 className="text-4xl font-bold mb-3">One Day Trips</h2>
         <p className="text-gray-500 text-lg mx-auto font-medium w-[40%]">
           A curated list of the most popular travel packages based on different destinations.</p>
       </div>
