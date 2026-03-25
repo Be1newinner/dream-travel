@@ -31,7 +31,7 @@ export default function TravelInspirations() {
     ];
 
     return (
-        <section className="py-20">
+        <section className="pt-20">
             <div className="text-center max-w-2xl mx-auto mb-12">
                 <h2 className="text-4xl font-bold mb-4">
                     Travel Inspirations
@@ -75,6 +75,14 @@ export default function TravelInspirations() {
                         </div>
                     </Link>
                 ))}
+            </div>
+            <div className="flex justify-center mt-12">
+                <Link
+                    href="/blog"
+                    className="bg-black text-white font-medium px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300"
+                >
+                    View All Inspirations
+                </Link>
             </div>
         </section>
     );
