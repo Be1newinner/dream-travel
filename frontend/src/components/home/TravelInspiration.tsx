@@ -61,23 +61,17 @@ export default function TravelInspirations() {
                         </div>
 
                         <div className="px-6 pb-6">
-                            <span className="text-sm text-gray-400 border rounded-full px-3 py-1">
+                            <span className="text-sm text-gray-700 border rounded-full px-4 py-1">
                                 {item.date}
                             </span>
 
-                            <h3 className="text-xl font-bold my-3 group-hover:text-blue-600 transition">
+                            <h3 className="text-3xl font-bold my-3 group-hover:text-blue-600 transition">
                                 {item.title}
                             </h3>
 
-                            <p className="text-gray-500 mb-4">
+                            <p className="text-gray-700 mb-4 font-medium">
                                 {item.desc}
                             </p>
-
-                            {item.location && (
-                                <p className="font-semibold text-sm">
-                                    {item.location}
-                                </p>
-                            )}
                         </div>
                     </Link>
                 ))}
