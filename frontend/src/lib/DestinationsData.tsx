@@ -17,13 +17,12 @@ export const DestinationsData: any = {
                 "Currency - Euro",
                 "Language - française",
             ],
-            description:
-                "Paris, known as the “City of Light” (La Ville Lumière), is the capital of France and one of the most romantic and iconic cities in the world. Known for its timeless architecture, world-class museums, charming streets, rich history, and exquisite cuisine, Paris is a must-visit destination for travelers from around the globe. Globally recognized as a fashion capital, Paris is the birthplace of haute couture and luxury brands like Chanel, Louis Vuitton, and Dior.",
-            timeToVisit: "Best Time to VisitBest Time to Visit",
+            description: <>Paris, known as the <span className="font-medium">“City of Light”</span> (La Ville Lumière), is the capital of France and one of the most romantic and iconic cities in the world. Known for its timeless architecture, world-class museums, charming streets, rich history, and exquisite cuisine, Paris is a must-visit destination for travelers from around the globe. Globally recognized as a fashion capital, Paris is the birthplace of haute couture and luxury brands like Chanel, Louis Vuitton, and Dior.</>,
+            timeToVisit: "Best Time to Visit",
         },
 
         locations: {
-            heading: "Senegal",
+            heading: "Popular Tourist Place",
             places: [
                 {
                     image: "/senegal/destination-dt-location-img1.webp",
