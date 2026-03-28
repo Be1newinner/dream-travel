@@ -37,7 +37,7 @@ export default function Locations({ heading, places }: { heading: string, places
                                     alt={item.name}
                                     className="w-full rounded-xl"
                                 />
-                                <p className="text-center mt-2 font-medium">
+                                <p className="text-center mt-3 font-medium">
                                     {item.name}
                                 </p>
                             </div>

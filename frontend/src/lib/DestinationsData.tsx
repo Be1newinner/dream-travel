@@ -1,3 +1,5 @@
+import { PhoneForwarded, Radar, Tags } from "lucide-react";
+
 export const DestinationsData: any = {
     senegal: {
         gallery: {
@@ -61,19 +63,19 @@ export const DestinationsData: any = {
                 "Because we don’t just plan your trip — we craft unforgettable experiences.",
             cards: [
                 {
-                    image: "/senegal/destination-dt-why-choose-img1.webp",
+                    icon: <Radar />,
                     heading: "Local Expertise",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
                 },
                 {
-                    image: "/senegal/destination-dt-why-choose-img2.webp",
+                    icon: <Tags />,
                     heading: "Transparent Pricing",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
                 },
                 {
-                    image: "/senegal/destination-dt-why-choose-img3.webp",
+                    icon: <PhoneForwarded />,
                     heading: "24/7 Support",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
