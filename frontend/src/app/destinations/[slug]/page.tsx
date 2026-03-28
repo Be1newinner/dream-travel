@@ -1,23 +1,20 @@
+// import { CarouselPlugin } from "@/components/destination/Gallery";
 import { DestinationsData } from "@/lib/DestinationsData";
-import Image from "next/image";
+import { Gallery } from "@/components/destination/Gallery";
 
-export default function ServicePage({ params }: any) {
-    const { slug } = params;
+export default async function ServicePage({ params }: PageProps<"/destinations/[slug]">) {
+    const { slug } = await params;
     const data = DestinationsData[slug];
 
-    if (!data) {
-        return <h1 className="text-center py-20">Page Not Found</h1>
-    }
+    // if (!data) {
+    //     return <h1 className="text-center py-20">Page Not Found</h1>
+    // }
 
-    const { gallery, info, locations, whyChooseUs, customerExperience, bestTime, travelVideo } = data;
+    // const { Gallery, info, locations, whyChooseUs, customerExperience, bestTime, travelVideo } = data;
 
     return (
         <section>
-            {gallery.map((item: any, index: number) => (
-                <div key={index}>
-                    <Image src={item.image} alt="" width={100} height={100} />
-                </div>
-            ))}
+            <Gallery images={data?.gallery?.images} />
         </section>
     )
 }

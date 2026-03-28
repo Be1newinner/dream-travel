@@ -106,57 +106,57 @@ export const DestinationsData: any = {
                 }
             ]
         },
-        bestTime:{
-            heading:"Best Time to Visit",
-            cards:[
+        bestTime: {
+            heading: "Best Time to Visit",
+            cards: [
                 {
-                image:"/senegal/travel-season-img1.webp",
-                season:"Spring",
-                month:"March - May",
-                highlights:[
-                    "Cherry blossoms, café culture.",
-                    "Moderate crowds.",
-                    "Ideal for outdoor walks & photo spots.",
-                ],
-                perfectFor:"Perfect For: First-time travelers, couples, light packers"
-            },
-            {
-                image:"/senegal/travel-season-img2.webp",
-                season:"Summer",
-                month:"June - August",
-                highlights:[
-                    "Long daylight hours.",
-                    "Open-air cinema, festivals.",
-                    "High tourist volume & prices.",
-                ],
-                perfectFor:"Perfect For: Festival lovers, families, nightlife explorers"
-            },
-            {
-                image:"/senegal/travel-season-img3.webp",
-                season:"Autumn",
-                month:"September - November",
-                highlights:[
-                    "Golden parks, wine season.",
-                    "Fewer tourists, great photos.",
-                    "Fashion Week buzz.",
-                ],
-                perfectFor:"Photographers, solo travelers, wine lovers"
-            },
-            {
-                image:"/senegal/travel-season-img4.webp",
-                season:"Winter",
-                month:"December - February",
-                highlights:[
-                    "Christmas markets, cozy cafés.",
-                    "Fewer crowds, better deals.",
-                    "Occasional snow = pure magic.",
-                ],
-                perfectFor:"Budget travelers, romantics, festive moods"
-            }
+                    image: "/senegal/travel-season-img1.webp",
+                    season: "Spring",
+                    month: "March - May",
+                    highlights: [
+                        "Cherry blossoms, café culture.",
+                        "Moderate crowds.",
+                        "Ideal for outdoor walks & photo spots.",
+                    ],
+                    perfectFor: "Perfect For: First-time travelers, couples, light packers"
+                },
+                {
+                    image: "/senegal/travel-season-img2.webp",
+                    season: "Summer",
+                    month: "June - August",
+                    highlights: [
+                        "Long daylight hours.",
+                        "Open-air cinema, festivals.",
+                        "High tourist volume & prices.",
+                    ],
+                    perfectFor: "Perfect For: Festival lovers, families, nightlife explorers"
+                },
+                {
+                    image: "/senegal/travel-season-img3.webp",
+                    season: "Autumn",
+                    month: "September - November",
+                    highlights: [
+                        "Golden parks, wine season.",
+                        "Fewer tourists, great photos.",
+                        "Fashion Week buzz.",
+                    ],
+                    perfectFor: "Photographers, solo travelers, wine lovers"
+                },
+                {
+                    image: "/senegal/travel-season-img4.webp",
+                    season: "Winter",
+                    month: "December - February",
+                    highlights: [
+                        "Christmas markets, cozy cafés.",
+                        "Fewer crowds, better deals.",
+                        "Occasional snow = pure magic.",
+                    ],
+                    perfectFor: "Budget travelers, romantics, festive moods"
+                }
             ]
         },
-        travelVideo:{
-            video:"/senegal/destination-dt-faq-video-img.webp"
+        travelVideo: {
+            video: "/senegal/destination-dt-faq-video-img.webp"
         },
     },
 };
