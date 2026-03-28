@@ -33,7 +33,7 @@ const searches = [
 
 export default function Footer() {
     return (
-        <footer className="bg-[#0b0b2a] text-white pt-20">
+        <footer className="bg-[#0b0b2a] text-white pt-45">
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
                 <div className="">
                     <Link href="/" className="text-2xl font-bold">
@@ -111,10 +111,10 @@ export default function Footer() {
                     </p>
 
                     <div className="flex items-center gap-4">
-                        <Image src="/master-card-icon.webp" alt="mastercard" width={50} height={30} />
-                        <Image src="/visa-icon.webp" alt="visa" width={50} height={30} />
-                        <Image src="/paypal-icon.webp" alt="paypal" width={50} height={30} />
-                        <Image src="/gpay-icon.webp" alt="gpay" width={50} height={30} />
+                        <Image src="/logo/mastar-card-icon.svg" alt="mastercard" width={50} height={30} />
+                        <Image src="/logo/visa-icon.svg" alt="visa" width={50} height={30} />
+                        <Image src="/logo/paypal-icon.svg" alt="paypal" width={50} height={30} />
+                        <Image src="/logo/gpay-icon.svg" alt="gpay" width={50} height={30} />
                     </div>
 
                 </div>

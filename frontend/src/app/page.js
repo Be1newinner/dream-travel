@@ -11,6 +11,7 @@ import TourGuided from "@/components/home/TourGuided";
 import HearFromTraveler from "@/components/home/HearFromTraveler";
 import InfinityScroll from "@/components/home/Marquee";
 import TravelInspiration from "@/components/home/TravelInspiration";
+import Newsletter from "@/components/home/Newsletter";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
       <HearFromTraveler />
       <InfinityScroll />
       <TravelInspiration />
-      
+      <Newsletter />
     </>
   );
 }
