@@ -34,7 +34,7 @@
     "src/components/home/merquee/Marquee.js",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "src/app/page.js"  ],
   "exclude": [
     "node_modules"
   ]
