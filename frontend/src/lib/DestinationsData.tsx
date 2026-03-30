@@ -90,21 +90,13 @@ export const DestinationsData: any = {
         customerExperience: {
             heading: "Recent Customer Experience",
             images: [
-                {
-                    image: "/senegal/customer-gallery-img3.webp",
-                },
-                {
-                    image: "/senegal/customer-gallery-img4.webp",
-                },
-                {
-                    image: "/senegal/destination-details-video.mp4",
-                },
-                {
-                    image: "/senegal/customer-gallery-img6.webp",
-                },
-                {
-                    image: "/senegal/customer-gallery-img7.webp",
-                }
+                "/senegal/customer-gallery-img1.webp",
+                "/senegal/customer-gallery-img2.webp",
+                "/senegal/customer-gallery-img3.webp",
+                "/senegal/customer-gallery-img4.webp",
+                // "/senegal/destination-details-video.mp4",
+                "/senegal/customer-gallery-img6.webp",
+                "/senegal/customer-gallery-img7.webp",
             ]
         },
         bestTime: {

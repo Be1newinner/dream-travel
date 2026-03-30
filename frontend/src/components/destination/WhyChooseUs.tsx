@@ -16,7 +16,7 @@ export default function WhyChooseUs({
     highlights: string[]
 }) {
     return (
-        <section className="bg-[url('/senegal/destination-dt-why-choose-bg.webp')] bg-cover bg-center bg-[#F2F2FF] py-16">
+        <section className="bg-[url('/senegal/destination-dt-why-choose-bg.webp')] bg-cover bg-center bg-[#F2F2FF] py-16 2xl:py-24">
 
             <div className="max-w-7xl mx-auto px-4">
 
@@ -32,17 +32,17 @@ export default function WhyChooseUs({
                     {cards.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition"
+                            className="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition 2xl:py-12"
                         >
                             <div className="flex justify-center text-blue-500 text-2xl sm:text-3xl mb-4">
                                 {item.icon}
                             </div>
 
-                            <h2 className="text-lg sm:text-xl font-semibold mb-2">
+                            <h2 className="text-lg sm:text-xl 2xl:text-3xl font-semibold mb-2 2xl:mb-4">
                                 {item.heading}
                             </h2>
 
-                            <p className="text-sm sm:text-base text-gray-600">
+                            <p className="text-sm sm:text-base 2xl:text-lg text-gray-600">
                                 {item.description}
                             </p>
                         </div>
