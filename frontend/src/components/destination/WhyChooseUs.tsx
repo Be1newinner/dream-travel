@@ -1,27 +1,65 @@
 import Link from "next/link"
 
-export default function WhyChooseUs({ heading, description, cards, highlights }: { heading: string, description: string, cards: { icon: React.ReactNode, heading: string, description: string }[], highlights: string[] }) {
+export default function WhyChooseUs({
+    heading,
+    description,
+    cards,
+    highlights,
+}: {
+    heading: string
+    description: string
+    cards: {
+        icon: React.ReactNode
+        heading: string
+        description: string
+    }[]
+    highlights: string[]
+}) {
     return (
-        <section className="bg-[url('/senegal/destination-dt-why-choose-bg.webp')] bg-cover bg-center bg-[#F2F2FF] h-screen">
-            <div className="max-w-7xl mx-auto py-10">
-                <h1 className="text-4xl font-bold py-6 text-center">{heading}</h1>
-                <p className="text-lg text-gray-700 font-base text-center pb-4">{description}</p>
-                <div className="flex gap-6 text-center py-10">
+        <section className="bg-[url('/senegal/destination-dt-why-choose-bg.webp')] bg-cover bg-center bg-[#F2F2FF] py-16">
+
+            <div className="max-w-7xl mx-auto px-4">
+
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
+                    {heading}
+                </h1>
+
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 text-center max-w-2xl mx-auto mb-10">
+                    {description}
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {cards.map((item, index) => (
-                        <div key={index} className="border bg-white rounded-xl space-y-4 p-10">
-                            <div className="flex justify-center text-blue-500">{item.icon}</div>
-                            <h2 className="text-2xl font-bold">{item.heading}</h2>
-                            <p className="text-lg text-gray-700 font-base">{item.description}</p>
+                        <div
+                            key={index}
+                            className="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition"
+                        >
+                            <div className="flex justify-center text-blue-500 text-2xl sm:text-3xl mb-4">
+                                {item.icon}
+                            </div>
+
+                            <h2 className="text-lg sm:text-xl font-semibold mb-2">
+                                {item.heading}
+                            </h2>
+
+                            <p className="text-sm sm:text-base text-gray-600">
+                                {item.description}
+                            </p>
                         </div>
                     ))}
                 </div>
-                <div className="flex gap-10 text-center py-10 w-4xl mx-auto">
+                <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-10">
                     {highlights.map((item, index) => (
-                        <div key={index} className="border bg-white rounded-full mx-auto">
-                            <Link href="#" className="flex justify-center hover:text-white hover:bg-blue-600 transition-all duration-300 ease-in-out px-6 py-2 rounded-full font-medium text-lg">{item}</Link>
-                        </div>
+                        <Link
+                            key={index}
+                            href="#"
+                            className="px-4 sm:px-6 py-2 text-sm sm:text-base rounded-full bg-white border hover:bg-blue-600 hover:text-white transition"
+                        >
+                            {item}
+                        </Link>
                     ))}
                 </div>
+
             </div>
         </section>
     )
