@@ -63,19 +63,19 @@ export const DestinationsData: any = {
                 "Because we don’t just plan your trip — we craft unforgettable experiences.",
             cards: [
                 {
-                    icon: <Radar />,
+                    icon: <Radar size={40} />,
                     heading: "Local Expertise",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
                 },
                 {
-                    icon: <Tags />,
+                    icon: <Tags size={40}/>,
                     heading: "Transparent Pricing",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
                 },
                 {
-                    icon: <PhoneForwarded />,
+                    icon: <PhoneForwarded size={40}/>,
                     heading: "24/7 Support",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
