@@ -5,6 +5,7 @@ import Info from "@/components/destination/Info";
 import Locations from "@/components/destination/Locations";
 import WhyChooseUs from "@/components/destination/WhyChooseUs";
 import CustomerExperience from "@/components/destination/CustomerExperience";
+import BestTime from "@/components/destination/BestTime";
 
 export default async function ServicePage({ params }: PageProps<"/destinations/[slug]">) {
     const { slug } = await params;
@@ -23,6 +24,7 @@ export default async function ServicePage({ params }: PageProps<"/destinations/[
             <Locations heading={data?.locations?.heading} places={data?.locations?.places} />
             <WhyChooseUs heading={data?.whyChooseUs?.heading} description={data?.whyChooseUs.description} cards={data?.whyChooseUs.cards} highlights={data?.whyChooseUs.highlights}/>
             <CustomerExperience heading={data?.customerExperience?.heading} image={data?.customerExperience?.images}  />
+            <BestTime heading ={data?.bestTime?.heading} cards={data?.bestTime?.cards}/>
         </section>
     )
 }
