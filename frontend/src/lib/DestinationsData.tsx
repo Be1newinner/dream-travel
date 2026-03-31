@@ -69,13 +69,13 @@ export const DestinationsData: any = {
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
                 },
                 {
-                    icon: <Tags size={40}/>,
+                    icon: <Tags size={40} />,
                     heading: "Transparent Pricing",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
                 },
                 {
-                    icon: <PhoneForwarded size={40}/>,
+                    icon: <PhoneForwarded size={40} />,
                     heading: "24/7 Support",
                     description:
                         "From secret spots in Montmartre to skip-the-line Eiffel Tower access — we curate every journey with insider knowledge.",
@@ -149,7 +149,8 @@ export const DestinationsData: any = {
             ]
         },
         travelVideo: {
-            video: "/senegal/destination-dt-faq-video-img.webp"
-        },
+            image: "/senegal/destination-dt-faq-video-img.webp",
+            videoUrl: "https://www.youtube-nocookie.com/embed/u31qwQUeGuM"
+        }
     },
 };
