@@ -151,6 +151,27 @@ export const DestinationsData: any = {
         travelVideo: {
             image: "/senegal/destination-dt-faq-video-img.webp",
             videoUrl: "https://www.youtube-nocookie.com/embed/u31qwQUeGuM"
-        }
+        },
+        faq: [
+            {
+                question: "What Services Does Your Travel Agency Provide?",
+                answer: <p>A travel agency typically provides a wide range of services to ensure a smooth and enjoyable travel experience. As like-<span className="font-medium text-black">Hotel booking, Flight Booking, Visa & Customized Travel Pakcge etc.</span></p>            },
+            {
+                question: "Do You Offer Customized Travel Packages?",
+                answer: <p>Absolutely! We offer fully customized travel packages based on your interests, budget, and schedule. Whether you're planning <span className="font-medium text-black">a solo adventure, a family vacation, a romantic getaway, or a group tour</span>, our team will tailor every detail to create a personalized travel experience just for you.</p>,
+            },
+            {
+                question: "Can I Book Flights, Hotels, and Tours Separately?",
+                answer: <p>Yes, you can! We provide the flexibility to book <span className="font-medium text-black">flights, hotels, and tours separately</span> based on your specific needs. Whether you need just a flight, only accommodation, or want to add a tour later — we’re here to help you plan each part of your trip your way.</p>,
+            },
+            {
+                question: "Do You Provide Visa Assistance?",
+                answer: <p>Yes, we do! Our team offers complete <span className="font-medium text-black">visa assistance services</span> to help you navigate the application process smoothly. From providing guidance on required documents to scheduling appointments and submitting applications, we're here to support you every step of the way.</p>,
+            },
+            {
+                question: "What Payment Methods Do You Accept?",
+                answer: <p>We accept a variety of <span className="font-medium text-black">payment methods</span> to make your booking process easy and convenient. These include <span className="font-medium text-black">cash, bank transfers, mobile payments (such as bKash, Nagad), and major debit/credit cards.</span> If you have a preferred payment option, feel free to let us know!</p>,
+            },
+        ]
     },
 };

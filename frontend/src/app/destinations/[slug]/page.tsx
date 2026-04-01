@@ -7,6 +7,8 @@ import WhyChooseUs from "@/components/destination/WhyChooseUs";
 import CustomerExperience from "@/components/destination/CustomerExperience";
 import BestTime from "@/components/destination/BestTime";
 import TravelVideo from "@/components/destination/TravelVideo";
+import FAQ from "@/components/destination/FAQ";
+import OneDayTrip from "@/components/home/OneDayTrip";
 
 export default async function ServicePage({ params }: PageProps<"/destinations/[slug]">) {
     const { slug } = await params;
@@ -27,6 +29,8 @@ export default async function ServicePage({ params }: PageProps<"/destinations/[
             <CustomerExperience heading={data?.customerExperience?.heading} image={data?.customerExperience?.images}  />
             <BestTime heading ={data?.bestTime?.heading} cards={data?.bestTime?.cards}/>
             <TravelVideo  image={data?.travelVideo?.image} videoUrl={data?.travelVideo?.videoUrl}/>
+            <FAQ faqData={data?.faq} />
+            <OneDayTrip />
         </section>
     )
 }
